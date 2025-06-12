@@ -1,0 +1,31 @@
+[project]
+name = "Digital-Image-Processing"
+authors = [
+    { name = "Łukasz Kwinta (lkwinta)", email = "lukaszmind@gmail.com" }
+]
+version = "1.0.0"
+description = ""
+readme = "README.md"
+
+requires-python = "==3.11.*"
+
+dependencies = [
+    "ipykernel",
+    "numpy",
+    "opencv-python",
+    "matplotlib",
+    "requests",
+    "scikit-learn",
+    "scipy"
+]
+
+[dependency-groups]
+dev = [
+    "pre-commit",
+    "ruff"
+]
+
+[tool.ruff.lint]
+ignore = [
+    "E731",  # lambda expressions
+]
